@@ -27,18 +27,5 @@ public class Main {
         System.out.println(t1.getEvenNum());
         System.out.println(t1.getOddNum());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
