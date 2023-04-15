@@ -1,8 +1,6 @@
-package PratikPatikaKlonu.com.patika.Model;
+package PratikPatikaKlonu.Model;
 
-import PratikPatikaKlonu.com.patika.Helper.Config;
-import PratikPatikaKlonu.com.patika.Helper.DBConnector;
-import PratikPatikaKlonu.com.patika.Helper.Helper;
+import PratikPatikaKlonu.Helper.*;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,7 +8,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 public class User {
     private int id;

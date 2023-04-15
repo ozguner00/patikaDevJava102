@@ -1,8 +1,8 @@
-package PratikPatikaKlonu.com.patika.View;
+package PratikPatikaKlonu.View;
 
-import PratikPatikaKlonu.com.patika.Helper.Helper;
-import PratikPatikaKlonu.com.patika.Model.Operator;
-import PratikPatikaKlonu.com.patika.Model.User;
+import PratikPatikaKlonu.Helper.Helper;
+import PratikPatikaKlonu.Model.Operator;
+import PratikPatikaKlonu.Model.User;
 
 import javax.swing.*;
 import javax.swing.event.TableModelEvent;

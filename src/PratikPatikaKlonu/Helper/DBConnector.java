@@ -1,4 +1,4 @@
-package PratikPatikaKlonu.com.patika.Helper;
+package PratikPatikaKlonu.Helper;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,7 +1,6 @@
-package PratikPatikaKlonu.com.patika.View;
+package PratikPatikaKlonu.View;
 
-import PratikPatikaKlonu.com.patika.Helper.Config;
-import PratikPatikaKlonu.com.patika.Helper.Helper;
+import PratikPatikaKlonu.Helper.*;
 
 import javax.swing.*;
 

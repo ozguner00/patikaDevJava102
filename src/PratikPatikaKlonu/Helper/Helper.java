@@ -1,8 +1,7 @@
-package PratikPatikaKlonu.com.patika.Helper;
+package PratikPatikaKlonu.Helper;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Objects;
 
 public class Helper {
     public static int centerPoint(String axis, int size){
