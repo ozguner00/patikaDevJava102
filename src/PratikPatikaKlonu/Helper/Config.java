@@ -1,4 +1,4 @@
-package PratikPatikaKlonu.com.patika.Helper;
+package PratikPatikaKlonu.Helper;
 
 import java.util.ArrayList;
 
