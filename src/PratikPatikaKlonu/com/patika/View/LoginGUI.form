@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PratikPatikaKlonu.com.patika.View.LoginGUI">
+  <grid id="27dc6" binding="pnlWrapper" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-2823425"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="ee690" binding="pnlTop" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="354" height="196"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-2823425"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="fea05" class="javax.swing.JLabel" binding="lblTop">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="36" style="1"/>
+              <foreground color="-11945092"/>
+              <text value="HOŞGELDİNİZ"/>
+            </properties>
+          </component>
+          <component id="56405" class="javax.swing.JLabel" binding="lblTop2">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Kullanıcı Girişi"/>
+            </properties>
+          </component>
+          <component id="82f80" class="javax.swing.JLabel" binding="lblUsername">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="24"/>
+              <text value="Kullanıcı Adı"/>
+            </properties>
+          </component>
+          <component id="2afa4" class="javax.swing.JTextField" binding="txtUsername">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="172" height="30"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="61411" class="javax.swing.JPasswordField" binding="txtPassword">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="172" height="30"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <hspacer id="4b5cd">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="4abf4" class="javax.swing.JLabel" binding="lblPassword">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="115" height="32"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="24"/>
+              <text value="Şifre"/>
+            </properties>
+          </component>
+          <component id="b1946" class="javax.swing.JButton" binding="btnLogin">
+            <constraints>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="172" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <text value="Giriş Yap"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="992ad" binding="pnlBottom" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="354" height="24"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-2823425"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <hspacer id="e12bb">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>
