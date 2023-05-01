@@ -88,6 +88,8 @@ public class User {
         return userList;
     }
 
+
+
     public static boolean addUser(String name, String username, String pass, String type ){
         boolean key = true;
         String query = "INSERT INTO user (name, username, pass, usertype) VALUES (?,?,?,?) ";
@@ -141,6 +143,7 @@ public class User {
 
         return key;
     }
+
 
     public static boolean updateUser(int id,String name, String username, String pass, String type){
         boolean key = true;

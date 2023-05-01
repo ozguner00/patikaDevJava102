@@ -7,6 +7,7 @@ import PratikPatikaKlonu.Model.User;
 import javax.swing.*;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.DefaultTableModel;
+import java.util.ArrayList;
 
 public class OperatorGUI extends JFrame {
     private final Operator operator;
@@ -27,6 +28,14 @@ public class OperatorGUI extends JFrame {
     private JButton btnAdd;
     private JButton btnUserDelete;
     private JTextField txtUserDelete;
+    private JPanel pnlSearch;
+    private JLabel lblNameSearch;
+    private JLabel lblUsernameSearch;
+    private JLabel lblUserTypeSearch;
+    private JTextField txtUsenameSearch;
+    private JComboBox cmbUserTypeSearch;
+    private JTextField txtNameSearch;
+    private JButton btnSearch;
     private DefaultTableModel mdlUserList;
     private Object[] rowUserList;
 
@@ -36,7 +45,7 @@ public class OperatorGUI extends JFrame {
         this.operator = operator;
         Helper.setLayout();
         setContentPane(pnlWrapper);
-        setSize(1050,450);
+        setSize(1050,510);
         setVisible(true);
         setResizable(false);
         setLocation(Helper.centerPoint("x",getSize().width),Helper.centerPoint("y",getSize().height));
@@ -129,6 +138,11 @@ public class OperatorGUI extends JFrame {
             }
         });
 
+
+        btnSearch.addActionListener(e ->{
+            getUserTable();
+        });
+
     }
 
     private void getUserTable(){
@@ -146,5 +160,6 @@ public class OperatorGUI extends JFrame {
             txtUserDelete.setText(null);
         }
     }
+
 
 }
