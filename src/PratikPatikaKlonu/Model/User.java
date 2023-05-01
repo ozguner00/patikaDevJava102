@@ -65,9 +65,8 @@ public class User {
         this.type = type;
     }
 
-    public static ArrayList<User> getUserList(){
+    public static ArrayList<User> getUserList(String query){
         ArrayList<User> userList = new ArrayList<>();
-        String query = "SELECT * FROM user";
         User user;
         try {
             Statement st = DBConnector.getInstance().createStatement();
@@ -87,8 +86,6 @@ public class User {
         }
         return userList;
     }
-
-
 
     public static boolean addUser(String name, String username, String pass, String type ){
         boolean key = true;
@@ -176,5 +173,17 @@ public class User {
         String query = "";
 
         return key;
+    }
+
+    public static String searchQuery(String name, String username, String usertype){
+        String query = "SELECT * FROM user WHERE name LIKE '%{{name}}%' AND username LIKE '%{{username}}%' ";
+        if(!usertype.isEmpty()){
+            query += "AND userType LIKE '%{{userType}}%'";
+            query = query.replace("{{userType}}",usertype);
+        }
+        query = query.replace("{{name}}",name);
+        query = query.replace("{{username}}",username);
+
+        return query;
     }
 }

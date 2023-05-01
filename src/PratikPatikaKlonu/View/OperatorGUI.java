@@ -7,7 +7,6 @@ import PratikPatikaKlonu.Model.User;
 import javax.swing.*;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.DefaultTableModel;
-import java.util.ArrayList;
 
 public class OperatorGUI extends JFrame {
     private final Operator operator;
@@ -32,8 +31,8 @@ public class OperatorGUI extends JFrame {
     private JLabel lblNameSearch;
     private JLabel lblUsernameSearch;
     private JLabel lblUserTypeSearch;
-    private JTextField txtUsenameSearch;
-    private JComboBox cmbUserTypeSearch;
+    private JTextField txtUsernameSearch;
+    private JComboBox cmbUsertypeSearch;
     private JTextField txtNameSearch;
     private JButton btnSearch;
     private DefaultTableModel mdlUserList;
@@ -140,16 +139,35 @@ public class OperatorGUI extends JFrame {
 
 
         btnSearch.addActionListener(e ->{
-            getUserTable();
+            String name = txtNameSearch.getText();
+            String username = txtUsernameSearch.getText();
+            String usertype = cmbUsertypeSearch.getSelectedItem().toString();
+            String query = User.searchQuery(name,username,usertype);
+            getUserTable(query);
         });
 
     }
 
     private void getUserTable(){
-
         DefaultTableModel clearModel = (DefaultTableModel) tblUserList.getModel();
         clearModel.setRowCount(0);
-        for(User user : User.getUserList()){
+        String query = "SELECT * FROM user";
+        for(User user : User.getUserList(query)){
+            int i = 0;
+            rowUserList[i++] = user.getId();
+            rowUserList[i++] = user.getName();
+            rowUserList[i++] = user.getUsername();
+            rowUserList[i++] = user.getPass();
+            rowUserList[i++] = user.getType();
+            mdlUserList.addRow(rowUserList);
+            txtUserDelete.setText(null);
+        }
+    }
+
+    private void getUserTable(String querySearch){ // Overloading for search
+        DefaultTableModel clearModel = (DefaultTableModel) tblUserList.getModel();
+        clearModel.setRowCount(0);
+        for(User user : User.getUserList(querySearch)){
             int i = 0;
             rowUserList[i++] = user.getId();
             rowUserList[i++] = user.getName();
